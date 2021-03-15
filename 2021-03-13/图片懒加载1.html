@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      display: block;
+      width: 500px;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/f9f62932312653ec.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/62d1c269f4bcfb5e.png">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/85184985974fdbd6.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/7c1abd6f0587fd7f.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/d7fb7b926c819d16.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/c9c1886297fa2b0f.jpeg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/97d1a4bcbb75e09e.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/cbc77a92a3ea4164.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/e85adc393c3c791a.jpeg">
+    
+  </div>
+  <script type="text/javascript">
+    var imgs = document.querySelectorAll('img');
+    //offsetTop是元素与offsetParent的距离，循环获取直到页面顶部
+    function getTop(e) {
+      // offsetTop只能获取到父元素的高度
+      // var top = e.offsetTop;
+      var top = 0;
+      // 直到父元素是null为止
+      while (e) {
+        top += e.offsetTop;
+        e = e.offsetParent;
+      }
+      return top;
+    }
+    // 更换img元素的src属性
+    function lazyImg(imgs) {
+      // 获取可视区域高度
+      var H = document.documentElement.clientHeight;
+      // 获取页面滚动高度
+      var S = document.documentElement.scrollTop || document.body.scrollTop;
+      // 循环判断
+      for(let i = 0; i < imgs.length; i++) {
+        if (H + S > getTop(imgs[i])) {
+          imgs[i].src = imgs[i].getAttribute('data-src');
+        }
+      }
+    }
+    // 页面加载和滚动时触发图片懒加载
+    window.onload = window.onscroll = function() {
+      lazyImg(imgs);
+    }
+  </script>
+</body>
+</html>

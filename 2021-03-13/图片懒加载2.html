@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      display: block;
+      width: 500px;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img id="img1" data-src="https://ftp.bmp.ovh/imgs/2021/03/f9f62932312653ec.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/62d1c269f4bcfb5e.png">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/85184985974fdbd6.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/7c1abd6f0587fd7f.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/d7fb7b926c819d16.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/c9c1886297fa2b0f.jpeg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/97d1a4bcbb75e09e.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/cbc77a92a3ea4164.jpg">
+    <img data-src="https://ftp.bmp.ovh/imgs/2021/03/e85adc393c3c791a.jpeg">
+    
+  </div>
+  <script type="text/javascript">
+    var imgs = document.querySelectorAll('img');
+    // 用来判断元素是否在窗口内
+    function isIn(el) {
+      // 获取元素的四周位置
+      var bound = el.getBoundingClientRect();
+      // 获取窗口高度
+      var innerHeight = window.innerHeight;
+      return bound.top <= innerHeight;
+    }
+    //检查图片是否在可视区内，如果不在，则加载
+    function check() {
+      Array.from(imgs).forEach(el => {
+        if (isIn(el)) {
+          loadImg(el)
+        }
+      })
+    }
+    // 检查src是否需要更换
+    function loadImg(el) {
+      if (!el.src) {
+        var source = el.dataset.src;
+        el.src = source;
+      }
+    }
+    // 页面加载和滚动时触发图片懒加载
+    window.onload = window.onscroll = function() {
+      check();
+    }
+  </script>
+</body>
+</html>

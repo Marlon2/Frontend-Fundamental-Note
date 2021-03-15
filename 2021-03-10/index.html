@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  哇哈哈
+  <script type="text/javascript">
+    class A {
+        // 构造函数，相当于之前的函数A
+        constructor(x) {
+          this.x = x
+        }
+
+        // 相当于挂载在原型链上的原型方法
+        showX() {
+          return this.x
+        }
+      }
+
+      // 生成对象实例
+      let a = new A(1)
+      // 调用原型方法
+      a.showX()
+      console.log(a.x)
+  </script>
+</body>
+</html>

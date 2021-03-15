@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .father {
+      font-size:20px;
+      color: red;
+    }
+    .child {
+      font-size: 14px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="child">快速排序</div>
+  </div>
+  <script type="text/javascript">
+  // 快读排序
+  let arr = [1, 20, 21, 3, 6, 34, 23, 15];
+  const quickSort = (arr) => {
+    if (arr.length <= 1) {
+      return []
+    }
+    // 先取出标识字段
+    let left = [], right = [], flag = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (flag > arr[i]) {
+        left.push(arr[i])
+      } else {
+        right.push(arr[i]);
+      }
+    }
+    return quickSort(left).concat([flag], quickSort(right));
+  }
+  let res = quickSort(arr);
+  console.log('res', res)
+  </script>
+</body>
+</html>
