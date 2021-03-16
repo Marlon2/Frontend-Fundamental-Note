@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="button">wahhahah</div>
+  <script>
+    // 1. 最先执行
+      // console.log('Start')
+
+      // // 5. 等then执行完了才是计时器里的任务
+      // setTimeout(() => {
+      //   console.log('Timeout 1')
+      //   Promise.resolve().then(() => console.log('Promise 3'))
+      // }, 0)
+
+      // // 6. 计时器也得按顺序来
+      // setTimeout(() => console.log('Timeout 2'), 0)
+
+      // // 3. 按顺序执行then，所以这个优先执行，哪怕要循环半天
+      // Promise.resolve().then(() => {
+      //   for (let i = 0; i < 100000; i++) { }
+      //   console.log('Promise 1')
+      // })
+
+      // // 4. 等3那边执行完了才是这里
+      // Promise.resolve().then(() => console.log('Promise 2'))
+
+      // // 2. 跳过异步任务，执行同步
+      // console.log('End');
+
+      let button = document.getElementById('button')
+
+        button.addEventListener('click', function CB1() {
+          setTimeout(() => console.log('Timeout 0'))
+        })
+
+        button.addEventListener('click', function CB1() {
+          // 1. 同一元素的多个事件处理函数，会按照添加顺序进行执行
+          // 自然这个是最先的
+          console.log('Listener 1-1')
+
+          // 7. 由于执行栈中的同步宏观任务全部执行完毕
+          // 现在可以来查看微任务了，按顺序，这是放入的第一个，并且可以执行
+          // 所以先执行这个
+          setTimeout(() => console.log('Timeout 1'))
+
+          // 3. 跳过setimeout异步任务，执行promise微任务的异步（该宏观任务中的微任务）
+          // 因为这个promise属于该事件处理内的微任务，因此这个宏观任务没结束
+          // 先执行完宏观任务里的微任务，才算做结束
+          Promise.resolve().then(() => console.log('Promise 1'))
+
+          // 2. 跳过settimeout和promise这两个异步，先执行同步语句
+          console.log('Listener 1-2')
+        })
+
+        button.addEventListener('click', function CB1() {
+          // 4. 第一个事件处理中的微任务处理完了
+          // 所以可以开始执行第二个事件处理了
+          //（事件处理1中的计时器属于异步宏观任务，暂不理睬）
+          console.log('Listener 2-1')
+
+          // 8. 和5其实是同时可以执行的，但是这个计时器是后入队列的，因此后执行
+          setTimeout(() => console.log('Timeout 2'))
+
+          // 6. 跳过当前的计时器，直接执行事件2中的异步微任务
+          // 这样事件2的事件队列就算是完成了
+          Promise.resolve().then(() => console.log('Promise 2'))
+
+          // 5. 跳过settimeout和promise这两个异步，先执行同步语句
+          console.log('Listener 2-2')
+        })
+
+// Listener 1-1, Listener 1-2, Promise 1, Listener 2, Promise 2-1, Listener 2-2, Timeout 1, Timeout 2
+  </script>
+</body>
+</html>
