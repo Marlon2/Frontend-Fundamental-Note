@@ -51,7 +51,10 @@
           // 3. 跳过setimeout异步任务，执行promise微任务的异步（该宏观任务中的微任务）
           // 因为这个promise属于该事件处理内的微任务，因此这个宏观任务没结束
           // 先执行完宏观任务里的微任务，才算做结束
-          Promise.resolve().then(() => console.log('Promise 1'))
+          Promise.resolve().then(() => {
+            console.log('Promise 1')
+            Promise.resolve().then(() => console.log('Promise 232'))
+          })
 
           // 2. 跳过settimeout和promise这两个异步，先执行同步语句
           console.log('Listener 1-2')
