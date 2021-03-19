@@ -16,7 +16,7 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 
 - [x] [promise 的原理](https://www.wolai.com/marlon/qFtcsD8rUSrTKfhvwVLdfy)
 - [x] [generator 原理](https://www.wolai.com/marlon/nY8sHCaM7rFfwQLjBF9xse)
-- [ ] 复习 
+- [x] 复习 
 
 ## 前端-D10-2021/03/18
 
@@ -25,4 +25,11 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 - [x] [简述 Javascript 中 this 的指向有哪些](https://www.wolai.com/marlon/gPcCakEJUNAm5z74weihvp)
 - [x] [async 和 defer 有什么区别？](https://www.wolai.com/marlon/aaRzaRF29k6SKKfFwsZxdz)
 - [x] [CSS 的选择器优先级是怎样](https://www.wolai.com/marlon/7tbLcyacbsusumqdJV9oQc)
+- [ ] 复习 
+
+## 前端-D11-2021/03/19
+
+- [x] [CSS 的伪类和伪元素的区别是什么](https://www.wolai.com/marlon/o4aJfjnueUGHJPg2DU184L)
+- [x] [MVC 模型和 MVVM 模型的区别](https://www.wolai.com/marlon/7TWGrjLUJUkqXCSR5jhhar)
+- [x] [简述 BFC 的原理及其使用场景](https://www.wolai.com/marlon/34TMk3QDfTN765JqAjfDqc)
 - [ ] 复习 

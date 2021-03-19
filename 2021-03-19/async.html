@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    async function demo() {
+      let haha = 'haha'
+      console.log('start', haha);
+      await setTimeout(() => {
+        haha = '1113'
+        console.log('end', haha);
+      }, 5000);
+      console.log('end', haha);
+    }
+    demo();
+  </script>
+</body>
+</html>
