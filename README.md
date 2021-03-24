@@ -37,3 +37,9 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 ## 前端-D12-2021/03/20
 
 - [x] [简述 Webpack 的使用场景和基础原理](https://www.wolai.com/marlon/jVvuAtPADR3cCCdbjMNPAL)
+
+## 前端-D13-2021/03/24
+
+- [x] [简述 CORS 的用途以及基本设置](https://www.wolai.com/marlon/5BDGdGkUGRbyZSNDQs7UyZ)
+- [x] [简述 JWT 的原理和校验机制](https://www.wolai.com/marlon/7bDEMypR9UuADsZFzdSP3M)
+- [x] [深拷贝与浅拷贝区别是什么](https://www.wolai.com/marlon/cLk8TFdChJgxiNXpxFQHER)
