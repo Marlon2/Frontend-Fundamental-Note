@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function random(min, max) {
+      return Math.floor((max - min + 1) * Math.random()) + min;
+    }
+    // 如何随机生成不重复的 10个100 以内的数字？
+    function simpleUniqNumber1(start, end, k) {
+      let res = [];
+      while (res.length < k) {
+        let num = random(start, end);
+        if (!res.includes(num)) {
+          res.push(num);
+        }
+      }
+      return res;
+    }
+    let rt = simpleUniqNumber1(0, 100, 10);
+    console.log(rt);
+
+    // 水塘采样问题 参考https://zhuanlan.zhihu.com/p/29178293
+    function simpleUniqNumber2(start, end, k) {
+      let n = end - start + 1;
+      if (k > n) {
+        return null;
+      }
+      let res = [];
+      // 前k个数据直接暂时存入结果数组
+      for (let i = start; i < start + k; i++) {
+        res[i-start] = i;
+      }
+      for (let i = start + k; i < end; i++) {
+        let rand = random(0, i);
+        // 第i个元素暂时以k/i的概率保留
+        if (rand < k) {
+          res[rand] = i;
+        }
+      }
+      return res;
+    }
+    let rt2 = simpleUniqNumber2(0, 100, 10);
+    console.log('rt2', rt2);
+  </script>
+</body>
+</html>
