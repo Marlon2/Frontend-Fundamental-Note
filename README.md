@@ -86,5 +86,7 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 - [x] [ES6 Proxy](https://www.wolai.com/marlon/7KJ2Ecv2FC77JSqQ8qPp8s)
 
 ## 前端-D15-2021/03/26
-
 - [x] [XSS攻击](https://www.wolai.com/marlon/jTF9Am1WpHTDstFJ1XERCR)
+
+## 前端-D16-2021/03/27
+- [x] [简述浏览器的垃圾回收机制](https://www.wolai.com/marlon/pu8zqdTDNJexQHyMbThRxC)
