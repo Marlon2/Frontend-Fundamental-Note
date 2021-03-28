@@ -93,3 +93,4 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 
 ## 前端-D17-2021/03/28
 - [x] [React setstate 原理分析](https://www.wolai.com/marlon/jQfqM8ziL4ryLgNAE2AgH5)
+- [x] [react hooks 和 class的区别](https://www.wolai.com/marlon/pV7TQE9BTWV5DxDdr4sWrh)
