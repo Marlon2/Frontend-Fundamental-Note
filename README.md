@@ -94,3 +94,7 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 ## 前端-D17-2021/03/28
 - [x] [React setstate 原理分析](https://www.wolai.com/marlon/jQfqM8ziL4ryLgNAE2AgH5)
 - [x] [react hooks 和 class的区别](https://www.wolai.com/marlon/pV7TQE9BTWV5DxDdr4sWrh)
+
+## 前端-D18-2021/03/29
+- [x] [Javascript 可以保存的最大数值是多少](https://www.wolai.com/marlon/hk1RDPGrr4w4MHe5zvh9BW)
+- [x] [如何用 CSS 画三角形](https://www.wolai.com/marlon/rXPrfncm8PqbcHscb8Vz6L)
