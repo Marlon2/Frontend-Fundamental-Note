@@ -102,3 +102,8 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 ## 前端-D19-2021/03/30
 - [x] [React 合成事件](https://www.wolai.com/marlon/pPi8tLzQQBx4PnaHqGQsuE)
 - [x] [React 性能优化](https://www.wolai.com/marlon/44rjn6EFYNFPTvXngdXquh)
+
+## 前端-D20-2021/03/31
+- [x] [JavaScript 中的严格模式是什么，有什么作用？](https://www.wolai.com/marlon/7qLH8bz8cuZD14tew9wK3o)
+- [x] [rem 与 em 的区别以及使用场景](https://www.wolai.com/marlon/3R5KC6awmrzALY3Lnp15qx)
+- [x] [什么是HOC？React里面用过哪些？可能让你实现一个add(1)(2)(3)的函数](https://www.wolai.com/marlon/9sCbssAch3rwgpNQpgUxAt)
