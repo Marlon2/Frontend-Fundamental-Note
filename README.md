@@ -121,3 +121,7 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 - [x] [实现EventEmitter订阅监听模式](https://www.wolai.com/marlon/21WjVAo4sHxQn8bhv5GZ97)
 - [x] [函数柯里化](https://www.wolai.com/marlon/9z6GsHnxjwGbi2EeYn6gHu)
 
+## 前端-D24-2021/04/05
+- [x] [数组拍平](https://www.wolai.com/marlon/gMz5ndMG2wyKZZ9ThLwYXW)
+- [x] [数组去重](https://www.wolai.com/marlon/c2hc64WRXNLyWK9RmpYvFp)
+- [x] [去除字符串首尾空格](https://www.wolai.com/marlon/szYJF1wRK45qzoeNpb6DW9)

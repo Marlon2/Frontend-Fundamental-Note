@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  hahha
+  <script type="text/javascript">
+    var permute = function (nums) {
+        let len = nums.length;
+        if (len === 0) {
+          return [];
+        }
+        let ret = [[nums[0]]];
+        for (let i = 1; i < len; i++) {
+          ret = ret.reduce((prev, cur) => {
+            let n = cur.length;
+            for (let j = 0; j <= n; j++) {
+              prev.push([...cur.slice(0, j), nums[i], ...cur.slice(j)])
+            }
+            return prev;
+          }, [])
+        }
+        return ret;
+      };
+      console.log(permute([1, 2, 3]))
+  </script>
+</body>
+</html>
