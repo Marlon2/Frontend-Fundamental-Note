@@ -125,3 +125,6 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 - [x] [数组拍平](https://www.wolai.com/marlon/gMz5ndMG2wyKZZ9ThLwYXW)
 - [x] [数组去重](https://www.wolai.com/marlon/c2hc64WRXNLyWK9RmpYvFp)
 - [x] [去除字符串首尾空格](https://www.wolai.com/marlon/szYJF1wRK45qzoeNpb6DW9)
+
+## 前端-D25-2021/04/06
+- [x] [简述 LRU 算法及其实现方式](https://www.wolai.com/marlon/3UiEtsYqiHugDa4yPmzbT6)
