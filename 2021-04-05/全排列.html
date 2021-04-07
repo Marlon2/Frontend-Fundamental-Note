@@ -27,7 +27,25 @@
         }
         return ret;
       };
-      console.log(permute([1, 2, 3]))
+      // console.log(permute([1, 2, 3]))
+      class Cat { 
+        constructor(name, color) { 
+          var heart = '❤️'    
+          var stomach = '胃'    
+          var heartbeat = function () { 
+            console.log(heart + '跳') 
+          }    
+          this.name = name    
+          this.color = color    
+          this.jump = function () { 
+            heartbeat()     	
+            console.log('我跳起来了~来追我啊') 
+          } 
+        } 
+      } 
+      var guaiguai = new Cat('guaiguai', 'white')
+      console.log(guaiguai.heart)
+      guaiguai.jump()
   </script>
 </body>
 </html>

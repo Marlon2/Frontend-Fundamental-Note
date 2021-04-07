@@ -128,3 +128,7 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 
 ## 前端-D25-2021/04/06
 - [x] [简述 LRU 算法及其实现方式](https://www.wolai.com/marlon/3UiEtsYqiHugDa4yPmzbT6)
+
+## 前端-D26-2021/04/07
+- [x] [JavaScript数据类型和数据结构](https://www.wolai.com/marlon/a6kisCsZfBY55koii9YtPe)
+- [x] [函数式编程和函数柯里化](https://www.wolai.com/marlon/dJ3u2JQyRHY8zeyr8uRjno)
