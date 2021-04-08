@@ -132,3 +132,6 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 ## 前端-D26-2021/04/07
 - [x] [JavaScript数据类型和数据结构](https://www.wolai.com/marlon/a6kisCsZfBY55koii9YtPe)
 - [x] [函数式编程和函数柯里化](https://www.wolai.com/marlon/dJ3u2JQyRHY8zeyr8uRjno)
+
+## 前端-D27-2021/04/08
+- [x] [JavaScript继承](https://www.wolai.com/marlon/aa6DkssA8xnbDTgRrKTMMq)
