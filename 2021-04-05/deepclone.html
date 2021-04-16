@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  deepclone
+  <script type="text/javascript">
+    function getType(target) {
+      return Object.prototype.toString.call(target).slice(8, -1);
+    }
+    function cloneSymbol(target) {
+      return Object(Symbol.prototype.valueOf.call(target));
+    }
+    function deepClone(obj, hash = new WeakMap()) {
+      if (obj === null) return obj;
+      if (getType(obj) === 'Date') {
+        return new Date(obj);
+      }
+      if (getType(obj) === 'RegExp') {
+        return new RegExp(obj);
+      }
+      // if (getType(obj) === 'Symbol') {
+      //   return cloneSymbol(obj);
+      // }
+      if (typeof obj !== 'object') {
+        return obj;
+      }
+      // 防止循环引用
+      if (hash.has(obj)) {
+        return hash.get(obj);
+      }
+      let cloneObj = new obj.constructor();
+      hash.set(obj, cloneObj);
+      for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+          cloneObj[key] = deepClone(obj[key], hash);
+        }
+      }
+      return cloneObj;
+    }
+    let sm = Symbol('sm')
+    let haha = {a: 123, b: { c: 'ccc'}, d: sm};
+    let hehe = deepClone(haha);
+    let aa = Object.assign({}, haha)
+    console.log(hehe, haha.d == hehe.d)
+  </script>
+</body>
+</html>
