@@ -135,3 +135,10 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 
 ## 前端-D27-2021/04/08
 - [x] [JavaScript继承](https://www.wolai.com/marlon/aa6DkssA8xnbDTgRrKTMMq)
+
+## 前端-D31-2021/04/15
+- [x] [hash和history模式的区别](https://www.wolai.com/marlon/nyRYJafp5PcoGfaWMMfgSa)
+- [x] [TCP三次握手和四次挥手](https://www.wolai.com/marlon/idgz5bGJjvgJP61rJXum6F)
+
+## 前端-D32-2021/04/16
+- [x] [Redux原理分析](https://www.wolai.com/marlon/wHZpnqc4fqoJA6hoTaTecH)
