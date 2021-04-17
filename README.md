@@ -142,3 +142,6 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 
 ## 前端-D32-2021/04/16
 - [x] [Redux原理分析](https://www.wolai.com/marlon/wHZpnqc4fqoJA6hoTaTecH)
+
+## 前端-D33-2021/04/17
+- [x] [React Fiber](https://www.wolai.com/marlon/bDiWQtZBFPC2Q3y8UVigtG)
