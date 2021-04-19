@@ -145,3 +145,7 @@ JavaScript：[JavaScript复习整理](https://www.wolai.com/marlon/7EYA6ANFw8mZg
 
 ## 前端-D33-2021/04/17
 - [x] [React Fiber](https://www.wolai.com/marlon/bDiWQtZBFPC2Q3y8UVigtG)
+
+## 前端-D34-2021/04/18
+- [x] [HTTP1.0和HTTP1.1有什么区别](https://www.wolai.com/marlon/fJgwawimC8QtBBYQcHLVJ4)
+- [x] [GET和POST 的区别](https://www.wolai.com/marlon/eKt1XHyzRqv6w1ZSfqKLHJ)
